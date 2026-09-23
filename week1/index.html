@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 550px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            padding-bottom: 8px;
+        }
+        fieldset {
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 6px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        .radio-group label,
+        .checkbox-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        button {
+            margin-top: 20px;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Form Pendaftaran </h1>
+    <form action="#" method="post">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukan nama lengkap" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukan Email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukan password" required>
+        <fieldset class="radio-group">
+            <legend>Jenis Kelamin</legend>
+            <input type="radio" id="lp" name="jenis_kelamin" value="Laki-laki">
+            <label for="lp">Laki-laki</label>
+            <input type="radio" id="pr" name="jenis_kelamin" value="Perempuan">
+            <label for="pr">Perempuan</label>
+            <input type="radio" id="pr" name="jenis_kelamin" value="Waria">
+            <label for="wr">transgender</label>
+            <input type="radio" id="pr" name="jenis_kelamin" value="Noklamin">
+            <label for="nk">gapunya Klamin</label>
+        </fieldset>
+        <fieldset class="checkbox-group">
+            <legend>Hobi</legend>
+            <input type="checkbox" id="hobi1" name="hobi" value="Membaca">
+            <label for="hobi1">NYURUH ISTRI JADI TKW</label>
+            <input type="checkbox" id="hobi2" name="hobi" value="Olahraga">
+            <label for="hobi2">NYELOT</label>
+            <input type="checkbox" id="hobi3" name="hobi" value="Musik">
+            <label for="hobi3">MANCING</label>
+            <input type="checkbox" id="hobi4" name="hobi" value="Coding">
+            <label for="hobi4">MASUKIN ANAK KE PONDOK</label>
+        </fieldset>
+        <label for="pendidikan">OPTIONAL</label>
+        <select id="pendidikan" name="pendidikan">
+            <option value="">-- optional --</option>
+            <option>PUNYA ANAK 15</option>
+            <option>NGANGUR</option>
+            <option>NGANGUR</option>
+            <option>NGANGUR</option>
+        </select>
+        <label for="saran">Kritik dan Saran</label>
+        <textarea id="saran" name="saran" placeholder="Tuliskan kritik dan saran Anda di sini"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
