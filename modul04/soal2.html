@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toko Kampus - Katalog Perlengkapan Kuliah</title>
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- =========================
+         BERANDA
+    ========================== -->
+
+    <header id="beranda" class="bg-blue-600 text-white">
+
+        <div class="max-w-6xl mx-auto px-6 py-8">
+
+            <!-- Judul -->
+            <h1 class="text-3xl md:text-4xl font-bold text-center">
+                Toko Kampus
+            </h1>
+
+            <!-- Deskripsi -->
+            <p class="text-center mt-2 text-blue-100">
+                Perlengkapan kuliah untuk kebutuhan sehari-hari
+            </p>
+
+            <!-- Navigasi -->
+            <nav class="flex justify-center gap-8 mt-6">
+
+                <a
+                    href="#beranda"
+                    class="hover:text-blue-200 transition"
+                >
+                    Beranda
+                </a>
+
+                <a
+                    href="#produk"
+                    class="hover:text-blue-200 transition"
+                >
+                    Produk
+                </a>
+
+                <a
+                    href="#kontak"
+                    class="hover:text-blue-200 transition"
+                >
+                    Kontak
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         PRODUK
+    ========================== -->
+
+    <main id="produk" class="max-w-6xl mx-auto px-6 py-12">
+
+        <h2 class="text-2xl font-bold text-center mb-8">
+            Produk Kami
+        </h2>
+
+        <!-- Grid Produk -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Produk 1 -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+
+                <img
+                    src="asets/images2.avif"
+                    alt="Buku Catatan"
+                    class="w-full h-48 object-cover rounded-lg"
+                >
+
+                <h3 class="text-xl font-bold mt-4">
+                    Buku Catatan
+                </h3>
+
+                <p class="text-blue-600 font-semibold mt-2">
+                    Rp15.000
+                </p>
+
+                <p class="text-gray-500 mt-2">
+                    Buku untuk mencatat materi kuliah.
+                </p>
+
+                <a
+                    href="#detail-buku"
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg mt-4 hover:bg-blue-800 transition"
+                >
+                    Lihat Detail
+                </a>
+
+            </div>
+
+
+            <!-- Produk 2 -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+
+                <img
+                    src="asets/images (1).jpeg"
+                    alt="Pulpen"
+                    class="w-full h-48 object-cover rounded-lg"
+                >
+
+                <h3 class="text-xl font-bold mt-4">
+                    Pulpen
+                </h3>
+
+                <p class="text-blue-600 font-semibold mt-2">
+                    Rp5.000
+                </p>
+
+                <p class="text-gray-500 mt-2">
+                    Pulpen untuk menulis tugas dan catatan.
+                </p>
+
+                <a
+                    href="#detail-pulpen"
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg mt-4 hover:bg-blue-800 transition"
+                >
+                    Lihat Detail
+                </a>
+
+            </div>
+
+
+            <!-- Produk 3 -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+
+                <img
+                    src="asets/images (2).jpeg"
+                    alt="Tumbler"
+                    class="w-full h-48 object-cover rounded-lg"
+                >
+
+                <h3 class="text-xl font-bold mt-4">
+                    Tumbler
+                </h3>
+
+                <p class="text-blue-600 font-semibold mt-2">
+                    Rp35.000
+                </p>
+
+                <p class="text-gray-500 mt-2">
+                    Botol minum untuk dibawa ke kampus.
+                </p>
+
+                <a
+                    href="#detail-tumbler"
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg mt-4 hover:bg-blue-800 transition"
+                >
+                    Lihat Detail
+                </a>
+
+            </div>
+
+
+            <!-- Produk 4 -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+
+                <img
+                    src="asets/images (3).jpeg"
+                    alt="Tas Kuliah"
+                    class="w-full h-48 object-cover rounded-lg"
+                >
+
+                <h3 class="text-xl font-bold mt-4">
+                    Tas Kuliah
+                </h3>
+
+                <p class="text-blue-600 font-semibold mt-2">
+                    Rp120.000
+                </p>
+
+                <p class="text-gray-500 mt-2">
+                    Tas untuk menyimpan buku dan alat tulis.
+                </p>
+
+                <a
+                    href="#detail-tas"
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg mt-4 hover:bg-blue-800 transition"
+                >
+                    Lihat Detail
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             DETAIL PRODUK
+        ========================== -->
+
+        <section class="mt-16">
+
+            <h2 class="text-2xl font-bold text-center mb-8">
+                Detail Produk
+            </h2>
+
+
+            <!-- Detail Buku -->
+            <div
+                id="detail-buku"
+                class="bg-white p-6 rounded-xl shadow-md mb-6"
+            >
+
+                <h3 class="text-xl font-bold">
+                    Buku Catatan
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Buku catatan dengan bahan kertas berkualitas dan
+                    cocok digunakan untuk mencatat materi perkuliahan.
+                </p>
+
+                <p class="mt-3">
+                    <span class="font-semibold">Bahan:</span>
+                    Kertas 70 gsm
+                </p>
+
+                <p>
+                    <span class="font-semibold">Ukuran:</span>
+                    A5
+                </p>
+
+            </div>
+
+
+            <!-- Detail Pulpen -->
+            <div
+                id="detail-pulpen"
+                class="bg-white p-6 rounded-xl shadow-md mb-6"
+            >
+
+                <h3 class="text-xl font-bold">
+                    Pulpen
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Pulpen dengan tinta hitam yang nyaman digunakan
+                    untuk menulis tugas dan catatan perkuliahan.
+                </p>
+
+                <p class="mt-3">
+                    <span class="font-semibold">Bahan:</span>
+                    Plastik dan tinta gel
+                </p>
+
+                <p>
+                    <span class="font-semibold">Ukuran:</span>
+                    0.5 mm
+                </p>
+
+            </div>
+
+
+            <!-- Detail Tumbler -->
+            <div
+                id="detail-tumbler"
+                class="bg-white p-6 rounded-xl shadow-md mb-6"
+            >
+
+                <h3 class="text-xl font-bold">
+                    Tumbler
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Tumbler praktis yang dapat digunakan untuk membawa
+                    minuman saat beraktivitas di kampus.
+                </p>
+
+                <p class="mt-3">
+                    <span class="font-semibold">Bahan:</span>
+                    Stainless steel
+                </p>
+
+                <p>
+                    <span class="font-semibold">Kapasitas:</span>
+                    500 ml
+                </p>
+
+            </div>
+
+
+            <!-- Detail Tas -->
+            <div
+                id="detail-tas"
+                class="bg-white p-6 rounded-xl shadow-md"
+            >
+
+                <h3 class="text-xl font-bold">
+                    Tas Kuliah
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Tas kuliah dengan ruang yang cukup untuk membawa
+                    laptop, buku, dan perlengkapan alat tulis.
+                </p>
+
+                <p class="mt-3">
+                    <span class="font-semibold">Bahan:</span>
+                    Polyester
+                </p>
+
+                <p>
+                    <span class="font-semibold">Ukuran:</span>
+                    42 x 30 x 12 cm
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         KONTAK
+    ========================== -->
+
+    <section
+        id="kontak"
+        class="bg-gray-800 text-white"
+    >
+
+        <div class="max-w-6xl mx-auto px-6 py-10 text-center">
+
+            <h2 class="text-2xl font-bold">
+                Kontak
+            </h2>
+
+            <p class="mt-3">
+                Toko Kampus
+            </p>
+
+            <p class="text-gray-300 mt-1">
+                toko@example.com
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-4">
+
+        <p>
+            &copy; 2026 Toko Kampus
+        </p>
+
+    </footer>
+
+</body>
+</html>
