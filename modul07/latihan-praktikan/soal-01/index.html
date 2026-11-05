@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soal 01 — Portal Informasi Praktikum</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .hero{padding:28px;border-radius:12px;background:#123b48;color:#fff;margin-bottom:24px}
+    .hero .eyebrow{color:#b9dce2;font:12px "IBM Plex Mono",monospace;letter-spacing:.12em}
+    .hero h1{margin:8px 0;color:#fff}.hero p{color:#d6e8eb;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .panel{border:1px solid var(--border);border-radius:10px;padding:22px;min-width:0}
+    .panel h2{margin-bottom:6px}.muted{color:var(--muted);font-size:14px}
+    .counter{font:600 38px "IBM Plex Mono",monospace;margin:12px 0}
+    .clock{font:14px "IBM Plex Mono",monospace;color:var(--accent)}
+    pre.result{min-height:130px;white-space:pre-wrap;overflow-wrap:anywhere}
+    .users{margin-top:12px}.status{min-height:48px}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding:22px}}
+  </style>
+</head>
+<body>
+  <main class="sheet" style="margin:24px auto;max-width:1120px;min-height:calc(100vh - 48px)">
+    <p class="page-meta">MODUL 07 / AJAX DAN KONSUMSI API / SOAL 01</p>
+    <header class="hero">
+      <div class="eyebrow">LABORATORIUM • PORTAL PRAKTIKUM</div>
+      <h1>Portal Informasi Praktikum</h1>
+      <p>Perbarui pengumuman dan direktori peserta tanpa memuat ulang halaman.</p>
+    </header>
+    <section class="panel" style="margin-bottom:20px">
+      <h2>Ruang praktikan</h2>
+      <label for="catatan">Catatan praktikan</label>
+      <input id="catatan" type="text" placeholder="Tulis catatan di sini..." autocomplete="off">
+      <div class="grid">
+        <div>
+          <div class="muted">Hitungan interaksi</div>
+          <div class="counter" id="angka">0</div>
+          <button type="button" id="tambah">Tambah hitungan</button>
+        </div>
+        <div>
+          <div class="muted">Waktu halaman pertama dibuka</div>
+          <p class="clock" id="waktu-awal">—</p>
+          <p class="muted">Catatan, hitungan, dan waktu ini tidak di-reset oleh request AJAX.</p>
+        </div>
+      </div>
+    </section>
+    <div class="grid">
+      <section class="panel">
+        <h2>01 / Pengumuman</h2>
+        <p class="muted">Mengambil berkas teks menggunakan XMLHttpRequest asynchronous.</p>
+        <button type="button" id="muat-pengumuman">Muat pengumuman</button>
+        <pre class="result" id="pengumuman" aria-live="polite">Pengumuman belum dimuat.</pre>
+      </section>
+      <section class="panel">
+        <h2>02 / Direktori peserta</h2>
+        <p class="muted">Pilih API sumber data, lalu ambil maksimal tiga peserta.</p>
+        <label for="sumber">Sumber data</label>
+        <select id="sumber">
+          <option value="lokal">Mock lokal</option>
+          <option value="eksternal">JSONPlaceholder</option>
+        </select>
+        <button type="button" id="ambil-peserta">Ambil peserta</button>
+        <p class="result status" id="status-peserta" role="status" aria-live="polite">Belum ada request.</p>
+        <ul class="users" id="daftar-peserta"></ul>
+      </section>
+    </div>
+    <p class="meta" style="margin-top:24px">Soal 01 · XMLHttpRequest + Fetch · API lokal / eksternal</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
